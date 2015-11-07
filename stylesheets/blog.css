@@ -31,11 +31,7 @@ p {
 }
 /*Module Rules*/
 .social-media-icons {
-  margin-top: 8%;
-}
-
-.social-media-icons img:first-child {
-  margin-left: 10%;
+  display: inline;
 }
 
 article {
