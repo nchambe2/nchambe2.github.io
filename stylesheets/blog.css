@@ -20,7 +20,6 @@ a {
 }
 
 li {
-  display: block;
   margin-left: 35%;
   margin-bottom: 2%;
 }
@@ -30,10 +29,10 @@ p {
   border-bottom: thin solid #000;
 }
 /*Module Rules*/
-.social-media-icons {
-  display: inline;
+.social-media-icons{
+  margin-left: 15%;
+  margin-bottom: 15%;
 }
-
 article {
   float: right;
   margin-right: 30%;
