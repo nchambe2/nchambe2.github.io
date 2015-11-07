@@ -7,11 +7,11 @@
 **What did you learn about CSS positioning?**
   I learned about the different types of CSS positioning:
   
-    *Static: The normal behavior of all elements are static. The only reason to ever apply a static position to a element is if some other styling has inadvertently affected it's position.
-    *Relative: Relative changes an element's position from where it originally was to where you want it to go. If you declare position: relative but don't specify top, right, bottom, left the position of the element will not change. If you do specify any of the other positions it will move the element relative to where it originally was positioned.
-    *Fixed: It's placed relative to the browser. So the element stays in place when scrolling occurs.
-    *Absolute: Allows you to place a page element relative to the nearest parent element that has relative or absolute positioning. If there isn't a parent element with those type of positioning then it will be based on the positioning of the html tag.
-    *Sticky: Keeps element positioned in a certain place so when scrolling it remains stuck to a certain place.
+    1. Static: The normal behavior of all elements are static. The only reason to ever apply a static position to a element is if some other styling has inadvertently affected it's position.
+    2. Relative: Relative changes an element's position from where it originally was to where you want it to go. If you declare position: relative but don't specify top, right, bottom, left the position of the element will not change. If you do specify any of the other positions it will move the element relative to where it originally was positioned.
+    3. Fixed: It's placed relative to the browser. So the element stays in place when scrolling occurs.
+    4. Absolute: Allows you to place a page element relative to the nearest parent element that has relative or absolute positioning. If there isn't a parent element with those type of positioning then it will be based on the positioning of the html tag.
+    5. Sticky: Keeps element positioned in a certain place so when scrolling it remains stuck to a certain place.
 
 
 **What aspects of your design did you find easiest to implement? What was most difficult?**
