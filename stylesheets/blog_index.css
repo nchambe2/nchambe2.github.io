@@ -1,0 +1,56 @@
+/*Base Rules*/
+/*aside {
+   background-color: #606060;
+   display: inline-block;
+   padding-right: 8%;
+}
+
+h1 {
+  font-size: 130%;
+  margin-left: 25%;
+  color: #fff;
+}*/
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  padding-bottom: 2%;
+ /* border-bottom: thin solid #000;
+  border-left-width: 5px;
+  border-right-width: 5px;*/
+}
+
+/*li {
+  margin-left: 35%;
+  margin-bottom: 2%;
+}
+
+p {
+  padding-bottom: 5%;
+  border-bottom: thin solid #000;
+}*/
+/*Module Rules*/
+
+.blog-links {
+  color: #000;
+/*.social-media-icons{
+  margin-left: 15%;
+  margin-bottom: 15%;
+}
+article {
+  float: right;
+  margin-right: 30%;
+}
+
+article a {
+  color: #000;
+}*/
+/*Theme Rules*/
+/*.picture  {
+  border-radius: 50%;
+  margin-left: 15%;
+  margin-top: 4%;
+}*/
