@@ -1,0 +1,38 @@
+/*Base Rules*/
+h1 {
+    text-align: center;
+    font-size: 200%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 100%;
+}
+
+p {
+  text-align: center;
+}
+
+img {
+  margin-left: 35%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+/*Module Rules*/
+.date {
+  border-bottom: thin solid #000;
+  padding-bottom: 1%;
+}
+.sub-header {
+  font-size: 130%;
+}
+
+#content-padding {
+  width: 60%;
+  margin-left: 25%;
+}
+
+.code-examples {
+  width: 40%;
+}
