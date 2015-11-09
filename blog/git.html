@@ -1,76 +1,31 @@
 <!DOCTYPE html>
 <head>
-  <title>Version Control for Beginners</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+    <title>Version Control for Beginners</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
 </head>
+<article>
+     <h1>Version Control for Beginners</h1>
 
-<main>
-  <h1>Version Control for Beginners</h1>
-  <h2>It's not as hard as you think</h2>
-  <h4>10/26/2015</h4>
+     <h2>It's not as hard as you think</h2>
 
-  <section>
-    <p>
-      I remember two years ago was the first time I ever heard of version control, git, and GitHub.
+     <h2>10/26/2015</h2>
 
-      Boy oh boy! I was so confused. As I was googling information about how to resolve merge conflicts all I remember is running into very advanced blog posts with diagrams that reminded me of hieroglyphics.
+    <p>I remember two years ago was the first time I ever heard of version control, git, and GitHub. Boy oh boy! I was so confused. As I was googling information about how to resolve merge conflicts all I remember is running into very advanced blog posts with diagrams that reminded me of hieroglyphics. I spent a lot of time thinking that version control was out of my league. The truth of the matter was that it wasn’t. The problem was that the way the information was presented to me was not accessible to a beginner. Not having access to easily digestible information when someone is first learning something can be frustrating. So this blog post is dedicated to all those who have tried, and failed to learn version control.</p>
+    <section>
+         <h2>Why Version Control?</h2>
 
-      I spent a lot of time thinking that version control was out of my league.
+        <p>Developers are really attracted to the idea of version control because they are always making changes to their code. Whether it’s adding files, editing files, or deleting them a project is pretty much always in a state of flux. If a developer isn’t always saving their files, and making backups they run the risk of potentially losing their work. That’s were version control comes in. Essentially, it’s a program installed locally on your computer whose explicit job is to backup your work. What makes it great is that it gives developers a lot of power over what files they want to save, when they want to save them, and gives you the added capability of easily sharing your changes with others.</p>
+    </section>
+    <section>
+         <h2>How does it Work?</h2>
 
-      The truth of the matter was that it wasn’t. The problem was that the way the information was presented to me was not accessible to a beginner.
+        <p>While git defiantly has a learning curve, the great part is that you will probably only need a handful of commands to get the job done. Let's walk through the process of creating a file, and saving a snap shot of that file change. In order to have git track all of the changes you are making to your project you need to first navigate to your project directory and run <em>git init</em>. Your next step is to then make a change to a file and save it. Inside of your project directory run <em>git status</em>. Running git status will give you a short update of whether git has detected any new changes within the project. If it has it will tell you what changes have occured. Then you can run <em>git add file_name</em> to stage the change for commit. The easiest way to think of this step is that you are about to take a picture. Before you take the picture you assemble everyone together, and place them in position. Simiarly, with adding you a file you are telling git which files will be part of this commit before you take the snapshot. Finally, you should run <em>git commit -m "short description here"</em>. The act of commiting a file will save a snapshot of the codebase at this particular moment in time. Taking this snapshot will also save who made the changes, when the changes were made, and why the changes were made.</p>
+    </section>
+    <section>
+         <h2>Why use GitHub to store your code?</h2>
 
-      Not having access to easily digestible information when someone is first learning something can be frustrating.
-
-      So this blog post is dedicated to all those who have tried, and failed to learn version control.
-    </p>
-
-    <b>Why Version Control?</b>
-    <p>
-      Developers are really attracted to the idea of version control because they are always making changes to their code.
-
-      Whether it’s adding files, editing files, or deleting them a project is pretty much always in a state of flux.
-
-      If a developer isn’t always saving their files, and making backups they run the risk of potentially losing their work.
-
-      That’s were version control comes in. Essentially, it’s a program installed locally on your computer whose explicit job is to backup your work.
-
-      What makes it great is that it gives developers a lot of power over what files they want to save, when they want to save them, and gives you the added capability of easily sharing your changes with others.
-    </p>
-
-    <b>How does it Work?</b>
-
-    <p>
-      While git defiantly has a learning curve, the great part is that you will probably only need a handful of commands to get the job done.
-
-      Let's walk through the process of creating a file, and saving a snap shot of that file change.
-
-      In order to have git track all of the changes you are making to your project you need to first navigate to your project directory and run <i>git init</i>.
-
-      Your next step is to then make a change to a file and save it.
-
-      Inside of your project directory run <i>git status</i>. Running git status will give you a short update of whether git has detected any new changes within the project. If it has it will tell you what changes have occured.
-
-       Then you can run <i>git add file_name</i> to stage the change for commit. The easiest way to think of this step is that you are about to take a picture. Before you take the picture you assemble everyone together, and place them in position. Simiarly, with adding you a file you are telling git which files will be part of this commit before you take the snapshot.
-
-       Finally, you should run <i>git commit -m "short description here"</i>. The act of commiting a file will save a snapshot of the codebase at this particular moment in time. Taking this snapshot will also save who made the changes, when the changes were made, and why the changes were made.
-    </p>
-
-     <b>Why use GitHub to store your code?</b>
-
-    <p>
-      Often times you will hear git and Github used interchangably in conversations. The important thing to keep in mind is that they are not the same thing.
-
-      Git is a piece of software stored locally on a persons machine. Which is used to track changes that are made to the codebase. While GitHub is a website where you can store your code remotely.
-
-      The resons for storing your code on GitHub can vary. A couple of great reasons to do it is that you want to share your code with others.  GitHub would then be a great place to host your source code, and make it availabe to those who want to extend the code or use it as a starting point for their code.
-
-     Another good reason is that you want to make your local changes accessible to other collaboraters.
-  </p>
-
-  <p>
-    Now go forth and git!
-  </p>
-
-  </section>
-</main>
+        <p>Often times you will hear git and Github used interchangably in conversations. The important thing to keep in mind is that they are not the same thing. Git is a piece of software stored locally on a persons machine. Which is used to track changes that are made to the codebase. While GitHub is a website where you can store your code remotely. The resons for storing your code on GitHub can vary. A couple of great reasons to do it is that you want to share your code with others. GitHub would then be a great place to host your source code, and make it availabe to those who want to extend the code or use it as a starting point for their code. Another good reason is that you want to make your local changes accessible to other collaboraters.</p>
+    </section>
+    <p>Now go forth and git!</p>
+</article>
