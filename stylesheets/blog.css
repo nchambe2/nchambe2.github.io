@@ -24,6 +24,7 @@ img {
   border-bottom: thin solid #000;
   padding-bottom: 1%;
 }
+
 .sub-header {
   font-size: 130%;
 }
@@ -35,4 +36,8 @@ img {
 
 .code-examples {
   width: 40%;
+}
+
+.description-text {
+  margin: 0 0 2% 0;
 }
