@@ -8,8 +8,12 @@ p {
   padding-bottom: 2%;
 }
 
+nav, footer {
+  background-color: #939393;
+}
+
 /*Module Rules*/
 
 .blog-links {
-  color: #000;
+  color: #424242;
 
