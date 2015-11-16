@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>Arrays vs. Hashes</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body>
+    <article>
+        <header>
+             <h1>Breaking Down Data Structures</h1>
+
+             <h2 class="date">11/15/2015</h2>
+
+        </header>
+        <section>
+             <h2>Arrays: Collections of Values</h2>
+
+            <p>I'm sure you have seen single values stored into variables. While this mechanism is great. The truth is that typically you will be dealing with several values at a time. While you can store each value into a single variable, a more efficient way is to store a collection of values into one variable. One way to do this is to create an array.A array is just a fancy name for a variable that contains a collection of values. These values can be numbers, strings, symbols, and even other arrays.</p>
+
+            <h2>How do I create a Array?</h2>
+            <p>While there are four ways to create an array. I'm going to focus on the two most common array creation methods. The Array.new method, and use of the literal constructor. When using the Array.new method you can create a empty array. You can also specify the size of the array. Literal array construction allows you to just use the square brackets and assign the array to a variable. Like the Array.new method you can create a empty one, or initialize it with contents.<p>
+
+             <aside>
+                <script src="https://gist.github.com/nchambe2/0ba6b01906e1da46d46b.js"></script>
+                <script src="https://gist.github.com/nchambe2/96c2472d9fb05bc92274"></script>
+            </aside>
+
+        </section>
+
+        <section>
+             <h2>So what are hashes? </h2>
+
+            <p>Hashes are another common data structure used in ruby. Like arrays hashes also hold collections of values. The difference being that each value is assigned to a unqiue key. There are four ways to construct a hash, but I'm only going to focus on the two most common. In order to construct a hash you can use: the Hash.new method or the literal constructor. The Hash.new method allows you to create a empty hash or initialize it with contents. While the literal constructor allows you to just use the curly braces, and assign the hash to a variable.</p>
+
+            <aside>
+                <script src="https://gist.github.com/nchambe2/92c05ce066afb493b25b.js"></script>
+            </aside>
+
+        </section>
+
+        <section>
+            <h2>Retrieving Data from Data Structures </h2>
+            <p>If you want to retrieve data from an array. You can access the value based on it's position in the array. To retrieve data from a hash you can access the value via its key.</p>
+
+            <script src="https://gist.github.com/nchambe2/a82ab9827ec7e60d59b3.js"></script>
+        </section>
+
+        <section>
+             <h2>So how do I know which one is the right one for me? </h2>
+
+            <p>Since arrays and hashes are both very similar it can be confusing to determine which method is best for you. The easiest way to determine that is to consider the type of data you are trying to store. If your data consists of ordered contents such as a consective set of numbers. It's best to place that information in a array. However, if you have a bunch of unordered data then use a hash. For instance, maybe you borrow a lot of books from you friends. You want to keep track of which book belongs to which friend. Using a hash to keep track of this data would allow you to use your friend's name as a key and assign the value of that book to your friends name. However, there are limitations to this example because hashes require all keys to be unique. So if you borrow more than one book from the same friend you wouldn't be able to use that friends name again.</p>
+        </section>
+    </article>
+</body>
+
+</html>
