@@ -35,9 +35,14 @@
              <aside><script src="https://gist.github.com/nchambe2/2a57cd4aa5e0346df690.js"></script></aside>
 
             <h2>Attribute Methods</h2>
-            <p>If you have several reader and writer methods within your class it can make it very long. Ruby provides you with attr_* methods that allow you to create one line reader, writer, or accessor methods. The accessor method will let you create both a reader and writer method one line. *WARNING* while the attr_accessor method is very tempting to use, it's important to think about whether you want other classes to have access to your instance variables. If you are unsure it's best to not do it. Unnecessarily exposing your instance variables to other programs can change your instance variable values in unexpected ways. </p>
+            <p>If you have several reader and writer methods within your class it can make it very long. Ruby provides you with attr_* methods that allow you to create one line reader, writer, or accessor methods. The accessor method creates both a reader and writer method for a instance variable. *WARNING* while the attr_accessor method is very tempting to use, it's important to think about whether you want other classes to have access to your instance variables. If you are unsure it's best to not do it. Unnecessarily exposing your instance variables to other programs can change your instance variable values in unexpected ways. </p>
 
             <aside><script src="https://gist.github.com/nchambe2/9039b2690624b952eaa4.js"></script></aside>
+
+            <h2>Creating New Instances of Objects</h2>
+            <p>Now that we have finished creating the car blueprint we can go ahead and create a instance of that object. You can either initialize a new instance object with certain attribute values, or you set them later via writer methods. Once you have a new instance created you can then use the variable name as a receiver object, and call methods on that object.</p>
+
+            <aside><script src="https://gist.github.com/nchambe2/17938bd2b3adc75e6bda.js"></script></aside>
 
         </section>
     </article>
