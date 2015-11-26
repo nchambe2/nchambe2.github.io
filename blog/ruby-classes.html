@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>Understanding Ruby Classes</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/ruby_blog.css">
+</head>
+<body>
+    <article>
+        <header>
+             <h1>Dissecting Ruby Classes</h1>
+
+             <h2 class="date">11/26/2015</h2>
+
+        </header>
+        <section>
+            <h2>Classes, Instance Variables, and Instance Methods </h2>
+            <p>Classes are blueprints for objects. With this blueprint your program can then create multiple instances of an object. Within classes are two primary pieces of information: attributes and behaviors. They are commanly referred to as instance variables and instance methods. They both contain information that is unqiue to each instance.</p>
+
+            <aside ><img src="../imgs/classes.png" alt="Class Diagram" id="class_diagram"/></aside>
+            <p class="description-text"><em>Original Source: Head First Ruby</em></p>
+
+            <h2>Thinking of Classes in Terms of the Real World  </h2>
+            <p>The easiest way to wrap your mind around this concept is to compare it to the real world. Let's use cars as an example. All cars have basic characteristics and behaviors in common:
+                Characteristics: wheels, doors, windows, trunk, headlights, colors, etc.
+                Behaviors: drive, park, blow horn, etc.
+           There are several different types of cars that exist. These different types of cars can be thought of as instances of the class car. Each type of car such as a Honda, Kia, Toyota, etc. all have characteristics that are distinct to them. In order to keep track of these distinct characteristics you store them in an instance variables.
+           Instance methods can then utilize these instance variables to personalize object behavior. For instance, lets say you have a miles per hour instance variable that your instance method drive uses. Passing this instance method to drive will cause the method to perform differently for a Corvette vs. a Honda.<p>
+
+          <aside><script src="https://gist.github.com/nchambe2/62463deca0b5e2d71470.js"></script></aside>
+
+            <h2>How do I Get Information about my Attributes?</h2>
+            <p>In the previous example we only created writer methods which set or reset attribute values for instance variables. If you want to access the info stored in these variables you can create reader methods. These methods primary purpose is to return the values of instance variables.</p>
+
+             <aside><script src="https://gist.github.com/nchambe2/2a57cd4aa5e0346df690.js"></script></aside>
+
+            <h2>Attribute Methods</h2>
+            <p>If you have several reader and writer methods within your class it can make it very long. Ruby provides you with attr_* methods that allow you to create one line reader, writer, or accessor methods. The accessor method will let you create both a reader and writer method one line. *WARNING* while the attr_accessor method is very tempting to use, it's important to think about whether you want other classes to have access to your instance variables. If you are unsure it's best to not do it. Unnecessarily exposing your instance variables to other programs can change your instance variable values in unexpected ways. </p>
+
+            <aside><script src="https://gist.github.com/nchambe2/9039b2690624b952eaa4.js"></script></aside>
+
+        </section>
+    </article>
+</body>
+
+</html>
