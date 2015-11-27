@@ -1,9 +1,4 @@
 /*Base Rules*/
-body {
-  margin-right: 5%;
-  margin-left: 5%;
-}
-
 h1 {
     text-align: center;
     font-size: 250%;
@@ -18,6 +13,14 @@ p {
   text-align: left;
 }
 
+section {
+  width: 85%;
+  border-left: solid;
+  border-top: solid;
+  padding: 30px;
+  float: right;
+}
+
 img {
   margin-left: 35%;
   margin-bottom: 2%;
@@ -26,7 +29,6 @@ img {
 
 /*Module Rules*/
 .date {
-  border-bottom: thin solid #000;
   padding-bottom: 1%;
 }
 
@@ -46,4 +48,36 @@ img {
 .description-text {
   margin: 0 0 2% 0;
   text-align: center;
+}
+
+.side_nav {
+  list-style: none;
+  float: left;
+  margin: 100px 0px 0px 30px;
+}
+
+.side_nav li {
+  margin-bottom: 20px;
+}
+
+#first_nav {
+  margin-left: 70px;
+}
+
+#second_nav {
+  margin-right: 70px;
+  float: right;
+}
+/*State Rules*/
+a:link {
+  color: #000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  text-decoration: underline;
 }

@@ -7,54 +7,75 @@
 <body>
     <article>
         <header>
+            <aside>
+                <a href="http://nchambe2.github.io/blog/git.html" id="first_nav">Version Control for Beginners</a>
+                 <a href="http://nchambe2.github.io/blog/arrays-hashes.html" id="second_nav">Breaking Down Data Structures</a>
+            </aside>
              <h1>Margins, Borders, and Padding, Which do I use?</h1>
 
              <h2 class="date">11/08/2015</h2>
 
         </header>
+
+        <nav>
+            <ul class="side_nav">
+                <li><a href="http://nchambe2.github.io/index.html">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="http://nchambe2.github.io/blog/index.html">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="http://nchambe2.github.io/contact/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
         <section>
              <h2>How I Learned to Love the Box Model</h2>
 
             <p>One of the most confusing concepts in CSS is the difference between margins, borders, and paddding. The first step in moving from confusion to mastery in this topic is to talk about the box model. All elements have an invisible rectangler box surrounding it's contents. The inner most layer of the box is the content that is displayed on the screen. The second layer is the padding which surrounds the content. The third layer is the border which encases both the padding and the content. Finally,the outermost layer is the margin which is the invisible area surrounding the border.</p>
+
             <aside>
                 <img src="../imgs/box_model.png" alt="Box Model Diagram" />
                 <p class="description-text"><em>Original Source: http://www.w3schools.com/css/box-model.gif</em></p>
             </aside>
-        </section>
-        <section>
+
              <h2>So Why Can't I See It?</h2>
 
             <p>So you might be asking yourself if these things exists why can't I see it on the screen. Well you can, but you just might not know what you are looking at.</p>
             <p>The actual content takes up a very minimal amount of space. The rest is filled up by the padding that surrounds the content. It's hard to recongize the difference between the two because the padding inherits the background color of the content. Making it very hard to distinguish where the content ends and the padding begins.</p>
             <p>By default borders are invisible. However, you can see them if you creat a style rule to declare its width, size, and color.</p>
+
             <aside>
                 <img src="../imgs/content_padding.png" alt="Example of content vs. padding"  id="content-padding"/>
 
             </aside>
             <p>While margins are always the colorless space surrounding the element.</p>
+
             <aside>
                 <img src="../imgs/margins.png" alt="Example of margins" />
 
                  <p class="description-text"><em>Original Source: https://media-mediatemple.netdna-ssl.com/wp-content/uploads/2009/09/1_b.gif</em></p>
             </aside>
-        </section>
-        <section>
+
              <h2>Working with Margins, Padding, and Borders </h2>
 
             <p>So now you know what margins and padding are. The next step is figuring out when to use them.</p>
             <p>Margins are used when you need to add space between elements. You can add space to the top, right, bottom, and left of an element. You can also declare each style property separately, or all on one line.</p>
+
             <aside>
                 <img src="../imgs/margins_code.png" alt="Code for declaring margins" class="code-examples"/>
             </aside>
+
             <p>Padding on the other hand is used to increase the space around the content without affecting the contents size. Just like the margin you can add space to the top, right, bottom, and left of an element. You can also declare each style property separately, or all on one line.</p>
+
             <aside>
                 <img src="../imgs/padding_code.png" alt="Code for declaring padding" class="code-examples"/>
             </aside>
-            <p>Borders are used to form the encasing around an element. You can declare the borders style, width, and color. These style properties can be applied seperately, or you can you define these properties all on in one line.</p>
+
+            <p>Borders are used to form the encasing around an element. You can declare the borders style, width, and color. These style properties can be applied seperately, or you can you define these properties all on in one line. Happy positioning!</p>
+
             <aside>
                 <img src="../imgs/border_style.png" alt="Code for declaring borders" class="code-examples"/>
             </aside>
-            <p>Happy positioning!</p>
         </section>
     </article>
 </body>
