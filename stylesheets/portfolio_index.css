@@ -1,0 +1,18 @@
+main {
+  width: 1400px;
+}
+
+section:first-child {
+    padding-top: 40px;
+}
+
+section:last-child {
+  padding-bottom: 40px;
+
+}
+
+img {
+  width: 25%;
+  height: 100%;
+  padding-bottom: 20px;
+}
