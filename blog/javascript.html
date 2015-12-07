@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>Classes vs. Constructor Functions</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body>
+    <article>
+        <header>
+            <aside>
+                  <a href="http://nchambe2.github.io/blog/css-concepts.html" id="first_nav"> ←The Map Method: The Inside Scoop</a>
+            </aside>
+             <h1>Classes and Constructor Functions</h1>
+
+             <h2 class="date">12/06/2015</h2>
+
+        </header>
+
+        <nav>
+            <ul class="side_nav">
+                <li><a href="http://nchambe2.github.io/index.html">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="http://nchambe2.github.io/blog/index.html">Blog</a></li>
+                <li><a href="http://nchambe2.github.io/about/about.html">About</a></li>
+                <li><a href="http://nchambe2.github.io/contact/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+             <h2>Creating batches of objects</h2>
+
+            <p>As you leave the world of object oriented programming with Ruby, and enter the world of functional programming with Javascript you may be wondering how do I create multiple instances of a object? The answer lies in the constructor function. Like classes constructor functions act as blueprint which endows each instance of a object with predefined behaviors and states. To create a constructor function you declare it using the function keyword, followed by the capitalized name of the function. You can then pass any properties that your objects will have via parameters. Inside of the function you assign each parameter to the offical property name prepended with the this keyword. Finally, you can add the methods each of your objects will have.</p>
+
+            <aside>
+                <script src="https://gist.github.com/nchambe2/000ba182c116300b7b73.js"></script>
+                <script src="https://gist.github.com/nchambe2/30ff3dd3f54ed993fc53.js"></script>
+            </aside>
+
+            <h2>How to Create New Instances</h2>
+            <p>Now that you have your blueprint, it's time to create a new object with it. In order to create this object you declare a variable name, and assign it to new keyword along with the name of the constructor function with any needed argruments. Behind the scenes the new keyword does the heavy lifting of creating a empty object. After the empty object is created the constructor function is called. Any arguments are then assigned as values to the properties defined in the function body, and methods are then added to the object. Finally, the object is returned and assigned to the variable name. </p>
+
+
+             <aside>
+                <script src="https://gist.github.com/nchambe2/91eb0cf3c646c87cfb23.js"></script>
+                <script src="https://gist.github.com/nchambe2/2b9581606ea32a602d15.js"></script>
+            </aside>
+
+            <h2>Differences Between Ruby Classes and Constructor Functions</h2>
+
+            <p>So far constructor functions have parrelled classes pretty well. However, there are some differences between the two. One of them being that in Ruby you have to use the special class keyword to create a new class. However, there isn't a special keyword used in the creation of a constructor function. While you will often see constructor functions with the name capitialized that is a style convention which makes it easier to identify them in code. In actuality you could write a constructor function  using standard function declaration or expression syntax. </p>
+
+            <aside>
+                <script src="https://gist.github.com/nchambe2/76c1c353b6bdab4b19c9.js"></script>
+                <script src="https://gist.github.com/nchambe2/bf342b7d9d5a58094672.js"></script>
+            </aside>
+
+        </section>
+    </article>
+</body>
+
+</html>
