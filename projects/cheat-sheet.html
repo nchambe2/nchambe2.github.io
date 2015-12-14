@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SQL Cheatsheet</title>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+   <link rel='stylesheet' href='stylesheet/cheat-sheet.css'/>
+  </head>
+  <body>
+
+    <header>
+        <h1>sql cheatsheet</h1>
+    </header>
+    <main id="columns">
+    <section class="column-1">
+        <h2>create</h2>
+        <p><span>create database</span> name_of_database;</p>
+        <p><span>create table</span> table_name (</p>
+        <p>id <span>integer primary key</span>,</p>
+        <p>column_name data_type);</p>
+
+        <h2>insert</h2>
+        <p><span>insert into</span> table_name</p>
+        <p><span>values</span> (value_1, value_2, value_3);</p>
+        <p><span>insert into</span> table_name(column_name, column_name, column_name)</p>
+        <p><span>values</span> (value_1, value_2, value_3);</p>
+
+       <h2>select</h2>
+        <p><span>select</span> * <span>from</span> table_name;</p>
+
+        <p><span>select</span> column_name <span>from</span> table_name;</p>
+
+        <p><span>select</span> column_name, column_name <span>from</span> table_name;</p>
+
+
+      <h2>where</h2>
+        <p><span>select</span> column_name <span>from</span> table_name</p>
+        <p><span>where</span> condition = value; </p>
+
+        <p><span>select</span> column_name <span>from</span> table_name</p>
+        <p><span>where</span> condition = value <span>and</span> condition = value; </p>
+        <p><span>select</span> column_name <span>from</span> table_name</p>
+        <p><span>where</span> condition = value <span>or</span> condition = value; </p>
+
+      <h2>order</h2>
+      <p><span>select</span> column_name <span>from</span> table_name</p>
+      <p><span>order by</span> column_name;</p>
+
+      <p><span>select</span> column_name <span>from</span> table_name</p>
+      <p><span>order by</span> column_name <span>asc</span>; </p>
+
+    </section>
+
+    <section class="column-2">
+
+      <h2>update</h2>
+      <p><span>update</span> table_name</p>
+      <p><span>set</span> column_name = value</p>
+      <p><span>where</span> column_name = value;</p>
+
+      <h2>delete</h2>
+      <p><span>delete from</span> table_name</p>
+      <p><span>where</span> column = value;</p>
+
+      <h2>drop</h2>
+      <p><span>drop table</span> table_name; </p>
+
+    <h2>alter</h2>
+    <p><span>alter table</span> table_name</p>
+    <p><span>add</span>column_name data_type;</p>
+
+    <p><span>alter table</span> table_name</p>
+    <p><span>drop column</span> column_name;</p>
+
+    <h2>inner join</h2>
+    <p><span>select</span> column_name from table_name<p>
+    <p><span>inner join</span> other_table_name</p>
+    <p><span>on</span> table_name.column_name=other_table_name.column_name;</p>
+
+    <h2>left join</h2>
+    <p><span>select</span> column_name <span>from</span> table_name<p>
+    <p><span>left join</span> other_table_name</p>
+    <p><span>on</span> table_name.column_name=other_table_name.column_name;</p>
+
+    <h2>right join</h2>
+    <p><span>select</span> column_name <span>from</span> table_name<p>
+    <p><span>right join</span> other_table_name</p>
+    <p><span>on</span> table_name.column_name=other_table_name.column_name;</p>
+   </section>
+  </main>
+
+    <footer>
+       <p>&copy;2015 Nicolette Chambers</p>
+    </footer>
+  </body>
+</html>
