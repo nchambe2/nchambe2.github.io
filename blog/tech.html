@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/ruby_blog.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
 </head>
 <body>
-    <article>
+    <article class="container-fluid">
+       <header class="row">
         <aside>
            <a href= "http://nchambe2.github.io/blog/enumerable-methods.html" id="first_nav">←Classes vs. Constructor Functions</a>
         </aside>
+        <h1 class="col-md-12">A Short Guide to Regular Expressions</h1>
 
-        <header>
-             <h1>A Short Guide to Regular Expressions</h1>
+        <h2 class="date col-md-12">12/11/2015</h2>
 
-             <h2 class="date">12/11/2015</h2>
+     </header>
 
-        </header>
-
-        <nav>
+       <main class="row">
+         <nav class="col-md-1">
             <ul class="side_nav">
                 <li><a href="http://nchambe2.github.io/index.html">Home</a></li>
                 <li><a href="http://nchambe2.github.io/projects/index.html">Portfolio</a></li>
@@ -29,38 +30,40 @@
             </ul>
         </nav>
 
-        <section>
-            <h2>Understanding Regular Expressions</h2>
+        <section class="col-md-10 col-md-offset-1">
+            <h2 class="sub-header">Understanding Regular Expressions</h2>
             <p>Regular Expressions are used to match character patterns in text. They are often used for such common tasks as data validation, web scraping, and parsing text files. While very useful they can be veiwed as being cryptic, difficult to use, hard to maintain, and just plain intimidating. Nevertheless, it's important to have a working knowledge of how to use them as a programmer since you will probably run into them or have to use them in your career.</p>
 
-            <h2>How to Use Regular Expressions</h2>
+            <h2 class="sub-header">How to Use Regular Expressions</h2>
             <p>While programming you will often run into situations where you have to validate whether the text input receivied from the user meets a certain criteria. In order to do that you might write a conditional statement which checkes to see if the input is correct or incorrect. Depending on what your trying to match the conditional statement can become very complex. A more concise way of doing this type of validation can be handled via Regular Expressions. Regular Expressions or regex as it's commonly referred to are made up of two components. The first part is the subject string which is the text you are looking through to identify a match. The second part is the regular expression. The expression starts after the first slash and ends before the last slash.<p>
 
           <aside><script src="https://gist.github.com/nchambe2/d14f9c13a0360361d50f.js"></script></aside>
 
-            <h2>String Literals</h2>
+            <h2 class="sub-header">String Literals</h2>
             <p>The easiest way to look for patterns within text is by defining the characters you are looking to match. Let's say you want to validate whether the email address contains the word com. Within your regular expression you can just pass the word com as a argument to the match method. If you wanted to match com or org you could then use the or operator to match either com or edu in the email address. While easy for matching a small amount of text the use of too many string literals can make your regular expressions brittle and prone to error.</p>
 
              <aside><script src="https://gist.github.com/nchambe2/d14f9c13a0360361d50f.js"></script></aside>
 
-            <h2>Regular Expressions Toolkit</h2>
+            <h2 class="sub-header">Regular Expressions Toolkit</h2>
             <p>There are a lot symbols that regex employs that will make your life easier. The following sections will not act as a comprehensive guide to every single symbol that is avaliable to you. It will however, highlight some of the symbols that are most important to have in your toolkit.</p>
 
             <aside><img src="../imgs/regular_expressions.jpeg" alt="Regular Expressions Diagram" id="class_diagram"/></aside>
             <p class="description-text"><em>Original Source: http://lifehacker.com/5335627/learn-the-basics-of-regular-expression-searches</em></p>
 
-            <h2>Character Sets, Numbers, and More </h2>
+            <h2 class="sub-header">Character Sets, Numbers, and More </h2>
             <p>Instead, of using the string literal of the word you are trying to match you can choose to use a character set. Character sets are comprised of two square brackets. Within the brackets is a character range. So you can have [a-z], [A-Z], [0-9], or some type of the combination of the three. If you wanted to match the word com using a character set. You would write /[a-z][a-z][a-z]/ Now you might be asking why? Well, a character set represents only one character within the defined range. So the first [a-z] matches c, the second character set matches o, and so on. If you have a short word then using a character set is perfectly fine. However, if you have a lot of characters to match this can make your regular expression very long and clunky. There are two symbols that can help you simplify things. The \w and + symbol. The \w symbol will match any alphanumeric character. While the + character will match the preceding character(s) one or more times. Since the \w matches only one word character you can combine the two symbols \w+ to match multiple characters. If you are trying to match a number you can use a character set made up of range of numbers. If the character set makes your regex too long you can then use the \d symbol to match a single number. If you need to match multiple numbers you can combine the \d and + symbols together. Since the \w matches alphanumeric characters you can also use that to match numbers. </p>
 
             <aside><script src="https://gist.github.com/nchambe2/8aac2e545d67631c1ea5.js"></script></aside>
 
-            <h2>Whitespace, Word Boundaries, and Optional Characters </h2>
+            <h2 class="sub-header">Whitespace, Word Boundaries, and Optional Characters </h2>
             <p>So far we've only covered matching a single word. However, in the real word you will often deal with such things as  matching words that have spaces, ensuring that the word you are matching is the only one present, or even matching against optional character patterns. Let's take a look at spaces first. If you want to match a subject string that contains spaces you can use the \s symbol. This will match any whitespace character such as a literal space, a new line, or a tab character. If you want to ensure that nothing comes before or after the subject string you can use the anchor(^) and dollar sign ($) symbol. The anchor which is placed at the beginning of your regular expression will start matching at the beginning of the subject string. While the dollar sign will stop at the end of the subject string. This would come in handy if you trying to ensure that there aren't any extra characters lingering around in your subject string. Finally, the optional character allows you to make a partial match on a subject string. Let's say you have two different forms of acceptable matches yes or y. You could then do y(es)? This will make the y a required character to match, and the es optional.</p>
 
             <aside><script src="https://gist.github.com/nchambe2/cf5b4dd0487b68fd6c34.js"></script></aside>
-
         </section>
+      </main>
     </article>
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script src='js/bootstrap.js'></script>
 </body>
 
 </html>

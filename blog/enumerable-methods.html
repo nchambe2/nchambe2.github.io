@@ -3,21 +3,22 @@
     <title>The Map Method: The Inside Scoop</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
 </head>
 <body>
-    <article>
-        <header>
+    <article class="container-fluid">
+        <header class="row">
             <aside>
                  <a href="http://nchambe2.github.io/blog/arrays-hashes.html" id="first_nav">←Breaking Down Data Structures</a>
                   <a href= "http://nchambe2.github.io/blog/ruby-classes.html" id="second_nav">Dissecting Ruby Classes→</a>
             </aside>
-             <h1>The Map Method: The Inside Scoop</h1>
+             <h1 class="col-md-12">The Map Method: The Inside Scoop</h1>
 
-             <h2 class="date">11/23/2015</h2>
+             <h2 class="date col-md-12">11/23/2015</h2>
 
         </header>
-
-        <nav>
+    <main class="row">
+        <nav class="col-md-1">
             <ul class="side_nav">
                 <li><a href="http://nchambe2.github.io/index.html">Home</a></li>
                 <li><a href="http://nchambe2.github.io/projects/index.html">Portfolio</a></li>
@@ -28,24 +29,27 @@
             </ul>
         </nav>
 
-        <section>
-            <h2>What is the Map Method, and why should I care? </h2>
+        <section class="col-md-10 col-md-offset-1">
+            <h2 class="sub-header">What is the Map Method, and why should I care? </h2>
             <p>The most common way you encounter iterating over collections is the use of the each method. While each is great there are other methods you can use depending on your desired result. One of those other methods is map. The map method allows you to iterate over a collection, execute the given code block, and return the result of that block. Where each and map differ is the return value. Each will execute the block, but the result of that execution is tossed out after the block has finished. The return value will be the orginal collection. If you want to use the results from the executed block, then you need to use map. One thing to note about map is that it always will return an array, even if the original object wasn't an array. The returned array will also be the same size as the original object.</p>
 
             <aside><script src="https://gist.github.com/nchambe2/bf2f0490509794872ce6.js"></script></aside>
 
-            <h2>Map vs Map!</h2>
+            <h2 class="sub-header">Map vs Map!</h2>
             <p>Map is a non destructive method. Meaning that map does not destroy the original object. There is a destructive map method alternative though called map!. Map! is a method belonging to the array class, and not the enumerable module. This is because .map! does inplace mapping of the block results. This can only be done on an array. Since map can be used on other types of data structures you wouldn't be able to perform in place mapping. If you use .map! it's important to remember that the original data structure will be permanently replaced by the results of the code block.<p>
 
             <aside><script src="https://gist.github.com/nchambe2/8d189266d6ca46e70066.js"></script></aside>
 
-            <h2>Sooooo...what does the collect method do?</h2>
+            <h2 class="sub-header">Sooooo...what does the collect method do?</h2>
             <p>Collect is actually an alias of the map method. It also has a destructive method called collect!. </p>
 
             <aside><script src="https://gist.github.com/nchambe2/eebb930bbbf3450ef47d.js"></script></aside>
 
         </section>
+      </main>
     </article>
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+      <script src='../js/bootstrap.js'></script>
 </body>
 
 </html>

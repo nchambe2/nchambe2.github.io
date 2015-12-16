@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/ruby_blog.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
 </head>
 <body>
-    <article>
+    <article class="container-fluid">
+     <header class="row">
         <aside>
            <a href= "http://nchambe2.github.io/blog/enumerable-methods.html" id="first_nav">←The Map Method: The Inside Scoop</a>
             <a href="http://nchambe2.github.io/blog/javascript.html" id="second_nav">Classes vs. Constructor Functions→</a>
         </aside>
+        <h1 class="col-md-12">Dissecting Ruby Classes</h1>
 
-        <header>
-             <h1>Dissecting Ruby Classes</h1>
+        <h2 class="date col-md-12">11/26/2015</h2>
 
-             <h2 class="date">11/26/2015</h2>
+    </header>
 
-        </header>
-
-        <nav>
+    <main class="row">
+        <nav class="col-md-1">
             <ul class="side_nav">
                 <li><a href="http://nchambe2.github.io/index.html">Home</a></li>
                 <li><a href="http://nchambe2.github.io/projects/index.html">Portfolio</a></li>
@@ -30,14 +31,14 @@
             </ul>
         </nav>
 
-        <section>
-            <h2>Classes, Instance Variables, and Instance Methods </h2>
+       <section class="col-md-10 col-md-offset-1">
+            <h2 class="sub-header">Classes, Instance Variables, and Instance Methods </h2>
             <p>Classes are blueprints for objects. With this blueprint your program can then create multiple instances of an object. Within classes are two primary pieces of information: attributes and behaviors. They are commanly referred to as instance variables and instance methods. They both contain information that is unqiue to each instance.</p>
 
             <aside ><img src="../imgs/classes.png" alt="Class Diagram" id="class_diagram"/></aside>
             <p class="description-text"><em>Original Source: Head First Ruby</em></p>
 
-            <h2>Thinking of Classes in Terms of the Real World  </h2>
+            <h2 class="sub-header">Thinking of Classes in Terms of the Real World  </h2>
             <p>The easiest way to wrap your mind around this concept is to compare it to the real world. Let's use cars as an example. All cars have basic characteristics and behaviors in common:
                 Characteristics: wheels, doors, windows, trunk, headlights, colors, etc.
                 Behaviors: drive, park, blow horn, etc.
@@ -46,23 +47,25 @@
 
           <aside><script src="https://gist.github.com/nchambe2/62463deca0b5e2d71470.js"></script></aside>
 
-            <h2>How do I Get Information about my Attributes?</h2>
+            <h2 class="sub-header">How do I Get Information about my Attributes?</h2>
             <p>In the previous example we only created writer methods which set or reset attribute values for instance variables. If you want to access the info stored in these variables you can create reader methods. These methods primary purpose is to return the values of instance variables.</p>
 
              <aside><script src="https://gist.github.com/nchambe2/2a57cd4aa5e0346df690.js"></script></aside>
 
-            <h2>Attribute Methods</h2>
+            <h2 class="sub-header">Attribute Methods</h2>
             <p>If you have several reader and writer methods within your class it can make it very long. Ruby provides you with attr_* methods that allow you to create one line reader, writer, or accessor methods. The accessor method creates both a reader and writer method for a instance variable. *WARNING* while the attr_accessor method is very tempting to use, it's important to think about whether you want other classes to have access to your instance variables. If you are unsure it's best to not do it. Unnecessarily exposing your instance variables to other programs can change your instance variable values in unexpected ways. </p>
 
             <aside><script src="https://gist.github.com/nchambe2/9039b2690624b952eaa4.js"></script></aside>
 
-            <h2>Creating New Instances of Objects</h2>
+            <h2 class="sub-header">Creating New Instances of Objects</h2>
             <p>Now that we have finished creating the car blueprint we can go ahead and create a instance of that object. You can either initialize a new instance object with certain attribute values, or you set them later via writer methods. Once you have a new instance created you can then use the variable name as a receiver object, and call methods on that object.</p>
 
             <aside><script src="https://gist.github.com/nchambe2/17938bd2b3adc75e6bda.js"></script></aside>
-
         </section>
+      </main>
     </article>
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script src='../js/bootstrap.js'></script>
 </body>
 
 </html>

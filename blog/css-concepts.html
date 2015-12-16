@@ -3,21 +3,23 @@
     <title>How I Learned to Love the Box Model</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
 </head>
 <body>
-    <article>
+    <article class="container-fluid">
         <header>
             <aside>
                 <a href="http://nchambe2.github.io/blog/git.html" id="first_nav">← Version Control for Beginners</a>
                  <a href="http://nchambe2.github.io/blog/arrays-hashes.html" id="second_nav">Breaking Down Data Structures →</a>
             </aside>
-             <h1>Margins, Borders, and Padding, Which do I use?</h1>
+             <h1 class="col-md-12">Margins, Borders, and Padding, Which do I use?</h1>
 
-             <h2 class="date">11/08/2015</h2>
+             <h2 class="date col-md-12">11/08/2015</h2>
 
         </header>
 
-        <nav>
+       <main class="row">
+        <nav class="col-md-1">
             <ul class="side_nav">
                 <li><a href="http://nchambe2.github.io/index.html">Home</a></li>
                 <li><a href="http://nchambe2.github.io/projects/index.html">Portfolio</a></li>
@@ -28,8 +30,8 @@
             </ul>
         </nav>
 
-        <section>
-             <h2>How I Learned to Love the Box Model</h2>
+        <section class="col-md-10 col-md-offset-1">
+             <h2 class="sub-header">How I Learned to Love the Box Model</h2>
 
             <p>One of the most confusing concepts in CSS is the difference between margins, borders, and paddding. The first step in moving from confusion to mastery in this topic is to talk about the box model. All elements have an invisible rectangler box surrounding it's contents. The inner most layer of the box is the content that is displayed on the screen. The second layer is the padding which surrounds the content. The third layer is the border which encases both the padding and the content. Finally,the outermost layer is the margin which is the invisible area surrounding the border.</p>
 
@@ -38,7 +40,7 @@
                 <p class="description-text"><em>Original Source: http://www.w3schools.com/css/box-model.gif</em></p>
             </aside>
 
-             <h2>So Why Can't I See It?</h2>
+             <h2 class="sub-header">So Why Can't I See It?</h2>
 
             <p>So you might be asking yourself if these things exists why can't I see it on the screen. Well you can, but you just might not know what you are looking at.</p>
             <p>The actual content takes up a very minimal amount of space. The rest is filled up by the padding that surrounds the content. It's hard to recongize the difference between the two because the padding inherits the background color of the content. Making it very hard to distinguish where the content ends and the padding begins.</p>
@@ -56,7 +58,7 @@
                  <p class="description-text"><em>Original Source: https://media-mediatemple.netdna-ssl.com/wp-content/uploads/2009/09/1_b.gif</em></p>
             </aside>
 
-             <h2>Working with Margins, Padding, and Borders </h2>
+             <h2 class="sub-header">Working with Margins, Padding, and Borders </h2>
 
             <p>So now you know what margins and padding are. The next step is figuring out when to use them.</p>
             <p>Margins are used when you need to add space between elements. You can add space to the top, right, bottom, and left of an element. You can also declare each style property separately, or all on one line.</p>
@@ -77,7 +79,10 @@
                 <img src="../imgs/border_style.png" alt="Code for declaring borders" class="code-examples"/>
             </aside>
         </section>
+      </main>
     </article>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script src='js/bootstrap.js'></script>
 </body>
 
 </html>

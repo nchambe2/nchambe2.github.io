@@ -28,6 +28,10 @@ img {
 }
 
 /*Module Rules*/
+footer {
+  background-color: #939393;
+}
+
 .date {
   padding-bottom: 1%;
 }
@@ -52,8 +56,6 @@ img {
 
 .side_nav {
   list-style: none;
-  float: left;
-  margin: 100px 0px 0px 30px;
 }
 
 .side_nav li {

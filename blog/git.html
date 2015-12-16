@@ -3,20 +3,21 @@
     <title>Version Control for Beginners</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
 </head>
-
-<article>
+<body>
+<article class="container-fluid">
+ <header>
     <aside>
         <a href="http://nchambe2.github.io/blog/css-concepts.html" id="second_nav">Margins, Borders, and Padding, Which do I use?→</a>
     </aside>
 
-  <header>
-        <h1>Version Control for Beginners</h1>
+        <h1 class="col-md-12">Version Control for Beginners</h1>
 
-        <h2 class="date">10/26/2015</h2>
+        <h2 class="date col-md-12">10/26/2015</h2>
     </header>
-
-    <nav>
+   <main class="row">
+    <nav class="col-md-1">
         <ul class="side_nav">
             <li><a href="http://nchambe2.github.io/index.html">Home</a></li>
             <li><a href="http://nchambe2.github.io/projects/index.html">Portfolio</a></li>
@@ -27,7 +28,7 @@
         </ul>
     </nav>
 
-    <section>
+    <section class="col-md-10 col-md-offset-1">
         <h2 class="sub-header">Understanding Version Control</h2>
 
         <p>I remember two years ago was the first time I ever heard of version control, git, and GitHub. Boy oh boy! I was so confused. As I was googling information about how to resolve merge conflicts all I remember is running into very advanced blog posts with diagrams that reminded me of hieroglyphics. I spent a lot of time thinking that version control was out of my league. The truth of the matter was that it wasn’t. The problem was that the way the information was presented to me was not accessible to a beginner. Not having access to easily digestible information when someone is first learning something can be frustrating. So this blog post is dedicated to all those who have tried, and failed to learn version control.</p>
@@ -44,4 +45,7 @@
 
         <p>Often times you will hear git and Github used interchangably in conversations. The important thing to keep in mind is that they are not the same thing. Git is a piece of software stored locally on a persons machine. Which is used to track changes that are made to the codebase. While GitHub is a website where you can store your code remotely. The resons for storing your code on GitHub can vary. A couple of great reasons to do it is that you want to share your code with others. GitHub would then be a great place to host your source code, and make it availabe to those who want to extend the code or use it as a starting point for their code. Another good reason is that you want to make your local changes accessible to other collaboraters. Now go forth and git!</p>
     </section>
+  </main>
 </article>
+</body>
+</html>
