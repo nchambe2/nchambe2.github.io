@@ -5,15 +5,17 @@
         <title>Nicolette Chambers</title>
         <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
         <link rel="stylesheet" type="text/css" href="../stylesheets/portfolio_index.css" />
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
     </head>
 
     <body>
         <article>
-            <header>
-                 <h1>Nicolette Chambers</h1>
+         <header class="container-fluid row">
+                 <h1 class="col-xs-12 text-center">Nicolette Chambers</h1>
+
             </header>
-            <nav>
-                <ul>
+             <nav class="navbar navbar-inverse">
+                <ul class="nav nav-pills">
                     <li class="nav-info"><a href="http://nchambe2.github.io/index.html">Home</a>
 
                     </li>
@@ -31,42 +33,28 @@
                     </li>
                 </ul>
             </nav>
+            <section class="container row">
+                <img class= "col-xs-9 col-xs-offset-3" src="../imgs/coming_soon.jpg" alt="Coming Soon Pic" />
+                <h2><span>Coming Soon</span></h2>
 
-                <main>
-                    <section class="col-xs-6 col-md-4">
-                       <a href="#"><img src="../imgs/comp_pic.jpeg" /></a>
-                       <a href="#"><img src="../imgs/comp_pic_2.jpeg" /></a>
-                       <a href="#"><img src="../imgs/comp_pic_3.jpeg" /></a>
-                    </section>
+            </section>
+            <footer class="navbar navbar-inverse navbar-static-bottom">
+                <ul class="container nav nav-pills">
+                    <li class="footer-info">
+                        <a href="mailto:nicolette3883@gmail.com">Email</a>
+                    </li>
+                    <li class="footer-info">
+                        <a href="https://www.linkedin.com/in/nicolettechambers">Linkedin</a>
+                    </li>
+                    <li class="footer-info">
+                        <a href="https://github.com/nchambe2">Github</a>
+                    </li>
 
-                    <section class="col-xs-6 col-md-4">
-                       <a href="#"><img src="../imgs/comp_pic.jpeg" /></a>
-                       <a href="#"><img src="../imgs/comp_pic_2.jpeg" /></a>
-                       <a href="#"><img src="../imgs/comp_pic_3.jpeg" /></a>
-                    </section>
-
-                    <section class="col-xs-6 col-md-4">
-                       <a href="#"><img src="../imgs/comp_pic.jpeg" /></a>
-                       <a href="#"><img src="../imgs/comp_pic_2.jpeg" /></a>
-                       <a href="#"><img src="../imgs/comp_pic_3.jpeg" /></a>
-                    </section>
-                </main>
-
-                <footer>
-                    <ul>
-                        <li class="footer-info"> <a href="mailto:nicolette3883@gmail.com">Email</a>
-
-                        </li>
-                        <li class="footer-info"> <a href="https://www.linkedin.com/in/nicolettechambers">Linkedin</a>
-
-                        </li>
-                        <li class="footer-info"> <a href="https://github.com/nchambe2">Github</a>
-
-                        </li>
-
-                        <li class="footer-info">&copy; Nicolette Chambers</li>
-                    </ul>
-                </footer>
+                    <li class="footer-info pull-right">&copy; Nicolette Chambers</li>
+                </ul>
+            </footer>
         </article>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script src='../js/bootstrap.js'></script>
     </body>
 </html>
