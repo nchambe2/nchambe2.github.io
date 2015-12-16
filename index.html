@@ -4,36 +4,43 @@
     <head>
         <title>Nicolette Chambers</title>
         <link rel="stylesheet" type="text/css" href="stylesheets/default.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     </head>
 
     <body>
-        <article class="main-content">
-            <header>
-                 <h1>Nicolette Chambers</h1>
+        <article>
+            <header class="container-fluid row">
+                 <h1 class="col-md-12 text-center">Nicolette Chambers</h1>
 
             </header>
-            <nav>
-                <ul>
-                    <li class="nav-info"><a href="http://nchambe2.github.io/index.html">Home</a>
+            <nav class="container-fluid navbar navbar-inverse">
+                <ul class="nav nav-pills">
+                    <li class="nav-info">
+                        <a href="http://nchambe2.github.io/index.html">Home</a>
+                    </li>
+                    <li class="nav-info">
+                        <a href="http://nchambe2.github.io/projects/index.html">Portfolio</a>
+                    </li>
+                    <li class="nav-info">
+                        <a href="http://nchambe2.github.io/blog/index.html">Blog</a>
 
                     </li>
-                    <li class="nav-info"><a href="http://nchambe2.github.io/projects/index.html">Portfolio</a>
+                    <li class="nav-info">
+                        <a href="http://nchambe2.github.io/about/about.html">About</a>
 
                     </li>
-                    <li class="nav-info"><a href="http://nchambe2.github.io/blog/index.html">Blog</a>
-
-                    </li>
-                    <li class="nav-info"><a href="http://nchambe2.github.io/about/about.html">About</a>
-
-                    </li>
-                     <li class="nav-info"><a href="http://nchambe2.github.io/contact/contact.html">Contact</a>
+                     <li class="nav-info">
+                        <a href="http://nchambe2.github.io/contact/contact.html">Contact</a>
 
                     </li>
                 </ul>
             </nav>
-            <img src="./imgs/computer_tea.png" alt="Desk" />
-            <footer>
-                <ul>
+            <section class="container row">
+                <img class= "col-md-9 col-md-offset-3" src="./imgs/computer_tea.png" alt="Desk" />
+            </section>
+
+            <footer class="navbar navbar-inverse navbar-static-bottom">
+                <ul class="container nav nav-pills">
                     <li class="footer-info">
                         <a href="mailto:nicolette3883@gmail.com">Email</a>
                     </li>
@@ -44,10 +51,12 @@
                         <a href="https://github.com/nchambe2">Github</a>
                     </li>
 
-                    <li class="footer-info">&copy; Nicolette Chambers</li>
+                    <li class="footer-info pull-right">&copy; Nicolette Chambers</li>
                 </ul>
             </footer>
         </article>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script src='js/bootstrap.js'></script>
     </body>
 
 </html>
