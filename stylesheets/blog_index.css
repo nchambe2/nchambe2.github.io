@@ -1,19 +1,9 @@
 /*Base Rules*/
+
 h2 {
-  text-align: center;
+  padding-bottom: 5%;
+  margin-left: 30%;
+  font-size: 20px !important;
 }
 
-p {
-  text-align: center;
-  padding-bottom: 2%;
-}
-
-nav, footer {
-  background-color: #939393;
-}
-
-/*Module Rules*/
-
-.blog-links {
-  color: #424242;
 
