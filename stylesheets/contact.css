@@ -1,23 +1,27 @@
 form {
   margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
   width: 500px;
+}
+
+h2 {
+  font-size: 50px;
 }
 
 input, textarea {
   display: block;
-  margin-top: 10px;
-  margin-bottom: 20px;
   font-size: 15px;
   border-radius: 5px;
 }
 
 input {
-  width: 400px;
+  width: 600px;
   height: 30px;
 }
 
 textarea {
-  width: 400px;
+  width: 600px;
   height: 200px;
   padding-top: 10px;
   padding-left:10px;
@@ -25,19 +29,16 @@ textarea {
 }
 
 label {
+  margin-top: 20px;
   font-size: 20px;
 }
 
-#submit_button {
-  width: 70px;
+#submit-button {
+  margin-top: 30px;
   position: relative;
-  left: 140px;
-  background-color: #939393;
+  left: 250px;
+  background-color: #000;
   color: #fff;
-}
-
-#submit_button:hover {
-  background-color: #7f7f7f;
 }
 
 input:focus, textarea:focus {

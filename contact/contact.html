@@ -5,15 +5,16 @@
     <meta charset="utf-8"/><html>
      <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
       <link rel="stylesheet" type="text/css" href="../stylesheets/contact.css" />
+      <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
   </head>
   <body>
-      <article class="main-content">
-            <header>
-                 <h1>Nicolette Chambers</h1>
+      <article>
+             <header class="container-fluid row">
+                 <h1 class="col-md-12 text-center">Nicolette Chambers</h1>
 
             </header>
-            <nav>
-                <ul>
+             <nav class="container-fluid navbar navbar-inverse">
+                <ul class="nav nav-pills">
                     <li class="nav-info"><a href="http://nchambe2.github.io/index.html">Home</a>
 
                     </li>
@@ -26,28 +27,31 @@
                     <li class="nav-info"><a href="http://nchambe2.github.io/about/about.html">About</a>
 
                     </li>
-                    <li class="nav-info"><a href="http://nchambe2.github.io/contact/contact.html">Contact</a>
+                     <li class="nav-info"><a href="http://nchambe2.github.io/contact/contact.html">Contact</a>
 
                     </li>
                 </ul>
             </nav>
 
             <form>
-              <h2>Contact Form</h2>
-              <label>Name</label>
-              <input name="name" placeholder="Name" required>
+              <h2 class="text-center">Contact Form</h2>
 
-              <label>Email</label>
+              <section>
+                <label class= 'lead'>Name</label>
+                <input name="name" placeholder="Name" required>
+              </section>
+
+              <label class= 'lead'>Email</label>
               <input name="email" placeholder="Email" required>
 
-              <label>Message</label>
+              <label class= 'lead'>Message</label>
               <textarea name="message" placeholder="Leave a note"></textarea>
 
-              <input id="submit_button" name="submit" type="submit" value="Submit">
+              <button type='button' class='btn btn-lg' id='submit-button'>Submit</button>
             </form>
 
-            <footer>
-                <ul>
+             <footer class="navbar navbar-inverse navbar-static-bottom">
+                <ul class="container nav nav-pills">
                     <li class="footer-info">
                         <a href="mailto:nicolette3883@gmail.com">Email</a>
                     </li>
@@ -58,9 +62,11 @@
                         <a href="https://github.com/nchambe2">Github</a>
                     </li>
 
-                    <li class="footer-info">&copy; Nicolette Chambers</li>
+                    <li class="footer-info pull-right">&copy; Nicolette Chambers</li>
                 </ul>
             </footer>
-          </article
+          </article>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script src='../js/bootstrap.js'></script>
   </body>
 </html>
