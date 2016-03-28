@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>Parsing and Saving Data From a CSV</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/ruby_blog.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+</head>
+<body>
+    <article class="container-fluid">
+       <header class="row">
+        <aside>
+           <a href= "http://nchambe2.github.io/blog/tech.html" id="first_nav">←A Short Guide to Regular Expressions</a>
+        </aside>
+        <h1 class="col-md-12">Parsing and Saving Data From a CSV</h1>
+
+        <h2 class="date col-md-12">3/28/2015</h2>
+
+     </header>
+
+       <main class="row">
+         <nav class="col-md-1">
+            <ul class="side_nav">
+                <li><a href="http://nchambe2.github.io/index.html">Home</a></li>
+                <li><a href="http://nchambe2.github.io/projects/index.html">Portfolio</a></li>
+                <li><a href="http://nchambe2.github.io/blog/index.html">Blog</a></li>
+                <li><a href="http://nchambe2.github.io/about/about.html">About</a></li>
+                <li><a href="http://nchambe2.github.io/contact/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="col-md-10 col-md-offset-1">
+
+            <h2 class="sub-header">Why Parse Data?</h2>
+            <p>Oftentimes you will have to convert an object from one type to another in order to utilize that information in your program. Say for instance you have a csv file containing student data such as grades. If you want to take that data, and utilize it in a Ruby program you will have to convert the information from a CSV object to a Ruby object. In order to do this you will need two classes. The first one will be student class that models the student data in the CSV file. The second, a student parser class will act as a translator converting the objects back forth between the two types.<p>
+
+            <h2 class="sub-header">Reading From a CSV File</h2>
+            <p>The csv file I will be using contains the student’s first name, last name, grade, and gpa. With that information our Student class should look something like this:</p>
+
+            <aside>
+               <script src="https://gist.github.com/nchambe2/effb248981c739779119.js"></script>
+            </aside>
+
+            <p>Now let’s create the student parser class. You will have to require the CSV library since it's not part of the Ruby Core. The method parse_student_objects_from_csv will read the information from the CSV, and convert each row into a student object. In order to do this you will need to first create an array called students, which will eventually hold the student objects. Next your going to iterate through each row in the CSV file. You can use the built in foreach method to read each line in the file. You will need to pass the file as an argument, along with the option headers: true. This option will treat the first row as a header. Each CSV row object will consist of the headers as the keys, and the student data as the values. In order to transform the CSV row object into a student object pass the values from the row as arguments to Person.new. Then push that information into the students array. Once the iteration is complete return the array. </p>
+
+            <aside>
+                <script src="https://gist.github.com/nchambe2/89171225846b4e3d74d6.js"></script>
+            </aside>
+
+            <p>If you want to see your newly created student objects you can create a new instance of the Student Parser class. Call the parse_student_objects_from_csv method on that instance, and print out each student object.</p>
+
+            <aside>
+                <script src="https://gist.github.com/nchambe2/317ea004782f744ddca7.js"></script>
+            </aside>
+
+            <h2 class="sub-header">Writing to a CSV File</h2>
+            <p>Now that we can read from the file, lets work on writing to the file.
+               Let's go back to our StudentParser class, and create a method called save_student_object_to_csv which takes in a student object as an argument.
+               To write to the file use the CSV built in method open. You will need to pass the file you want to open, along with the mode as arguments. In our case we will use “a” mode. You could alternatively use “w” mode. However, since we have pre-existing data in the file this mode will overwrite that information.Using "A" mode will allow us to append the new object to the end of the file.Finally, you need to store the student object attributes in an array and push that into the CSV file.
+            </p>
+
+            <aside>
+                <script src="https://gist.github.com/nchambe2/7e59b7ca13e7ddcb4405.js"></script>
+            </aside>
+
+            <p>In order to see this in action create a new student object and student parser instance. Then call the save_student_object_to_csv method on the student parser instance. Make sure to pass the student object as an argument to the method. If you go check out your csv file you should see the newly created student show up.</p>
+
+            <aside>
+                <script src="https://gist.github.com/nchambe2/a5a363cfa66ebc38ba1f.js"></script>
+            </aside>
+        </section>
+      </main>
+    </article>
+</body>
+
+</html>
